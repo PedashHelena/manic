@@ -1,0 +1,64 @@
+.section3 {
+  width: 100%;
+  position: relative;
+  background: $section3;
+  background-size: 50% 50%;
+  &_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 114rem;
+    max-width: 93%;
+    margin: 0 auto;
+  }
+  &_wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 120rem;
+    max-width: 75%;
+    @include max-screen(480px)  {
+      display: none;
+    }
+  }
+  &_row {
+    width: 50%;
+    max-width: 60rem;
+  }
+  &_item {
+    max-width: 60rem;
+    //max-height: 60rem;
+    overflow: hidden;
+  }
+  &_photo {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  &_item__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3rem;
+    font-family: PlayfairDisplay;
+    color:  $baseColor;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 6rem;
+    text-align: left;
+  }
+  &_firstletter {
+    color:  $colorAccent;
+  }
+  &_accent {
+    width: 18rem;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    @include max-screen(480px)  {
+      display: none;
+    }
+  }
+
+}

@@ -1,0 +1,122 @@
+.slider {
+  width: 100%;
+  padding-bottom: 5rem;
+  &_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 144rem;
+    max-width: 93%;
+    margin: 0 auto;
+    @include max-screen(440px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &_describe {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    @include max-screen(440px) {
+      width: 100%;
+    }
+  }
+  &_slider {
+    width: 50%;
+    @include max-screen(440px) {
+      width: 100%;
+    }
+  }
+  &_item {
+    & img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &_h2 {
+    font-family: PlayfairDisplay;
+    color: #010000;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    @include max-screen(768px) {
+      font-size: 3rem;
+    }
+  }
+  &_text {
+    color: rgba(0, 0, 0, 0.51);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: left;
+  }
+  &_button__slider {
+    margin: 0;
+    margin-top: 8rem;
+    align-self: flex-end;
+    @include max-screen(1024px) {
+      display: none;
+    }
+  }
+  &_button__footer {
+    display: none;
+    @include max-screen(1024px) {
+      display: flex;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 5rem;
+    }
+    @include max-screen(1024px) {
+      display: flex;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 8rem;
+    }
+
+  }
+  &_text_none {
+    @include max-screen(768px) {
+      display: none;
+    }
+  }
+}
+//SLICSLIDER
+.slick-prev {
+  top: 102%  !important;
+  left: 5rem !important;
+  z-index: 22;
+  width: 6rem;
+  @include max-screen(1440px)  {
+    top: 105% !important;
+}
+  @include max-screen(440px)  {
+    top: 50%  !important;
+    left: 1rem !important;
+  }
+}
+.slick-next {
+  top: 102%  !important;
+  right: 5rem !important;
+  @include max-screen(1440px)  {
+    top: 105% !important;
+}
+  @include max-screen(440px)  {
+    top: 50%  !important;
+    right: 3rem !important;
+  }
+}
+.services-active:active {
+  list-style: circle;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 40px;
+  color: black;
+  @include max-screen(440px)  {
+    color: white;
+  }
+}

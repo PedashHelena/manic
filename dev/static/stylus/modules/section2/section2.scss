@@ -1,0 +1,55 @@
+.section2 {
+  position: relative;
+  width: 100%;
+  background: $section2;
+  //overflow-x: hidden;
+  @include max-screen(480px)  {
+    background: url("../img/general/section2_bg.jpg") no-repeat;
+    height: 200rem;
+  }
+  @include max-screen(320px)  {
+    height: 220rem;
+  }
+  &_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 140rem;
+    max-width: 93%;
+    margin: 0 auto;
+    @include max-screen(480px)  {
+      display: none;
+    }
+  }
+  &_accent {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    max-width: 30rem;
+    max-height: 77rem;
+    @include max-screen(1240px)  {
+      top: -180%;
+    }
+    @include max-screen(768px)  {
+      display: none;
+    }
+  }
+  &_scratch {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  &_item {
+    max-width: 800px;
+    max-height: 800px;
+  }
+  &_item1 {
+    max-width: 61rem;
+    max-height: 60rem;
+  }
+  &_nail {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

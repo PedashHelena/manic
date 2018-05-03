@@ -1,0 +1,138 @@
+.promo {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/general/promo_bg.jpg") no-repeat;
+  background-size: cover;
+  color: $titleColor;
+  @include max-screen(1680px)  {
+    background-position: 65% top;
+  }
+  @include max-screen(1440px)  {
+    //background-position: 120% top;
+  }
+  @include max-screen(1024px)  {
+    background-position: 73% top;
+  }
+  @include max-screen(768px)  {
+    background-position: 65% top;
+  }
+  @include max-screen(440px)  {
+    background: url("../img/general/promo_bgmb.jpg") no-repeat;
+  }
+  &_wrap {
+    width: 114rem;
+    max-width: 93%;
+    margin: 0 auto;
+
+  }
+  &_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: -2rem;
+    @include max-screen(480px)  {
+      margin-top: -3rem;
+
+    }
+  }
+  &_contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 42rem;
+    @include max-screen(480px)  {
+      justify-content: space-around;
+
+    }
+  }
+  &_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-top: 3rem;
+    @include max-screen(480px)  {
+      width: 100%;
+    }
+
+  }
+  &_img {
+    padding-right: 0.5rem;
+  }
+  &_adress {
+    color: $titleColor;
+    font-size: 2rem;
+    margin: 0;
+  }
+  &_main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3rem 0 42rem;
+    @include max-screen(1440px)  {
+      padding-bottom: 50rem;
+    }
+    @include max-screen(1024px)  {
+      padding-bottom: 70rem;
+    }
+    @include max-screen(480px)  {
+      padding: 15rem 4rem 5rem;
+    }
+
+  }
+  &_general {
+    max-width: 44rem;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: left;
+  }
+  &_title {
+    font-family: "Playfair Display";
+    font-size: 6rem;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include max-screen(440px)  {
+      text-transform: none;    }
+  }
+  &_firstletter {
+    color: $letterColor;
+  }
+  &_text {
+    margin: 0;
+    padding-bottom: 3rem;
+  }
+  &_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 19rem;
+    height: 6rem;
+    border: 1px solid $letterColor;
+    color: $letterColor;
+    @include max-screen(480px)  {
+      margin: 0 auto;
+    }
+
+  }
+  &_station {
+    @include max-screen(480px)  {
+      display: none;
+    }
+  }
+}
+a.promo_button {
+  &:hover {
+    background: $buttonColor;
+  }
+}
+
+.logo {
+  @include max-screen(480px)  {
+    width: 10rem;
+    height: 10rem;
+  }
+}

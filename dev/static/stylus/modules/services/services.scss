@@ -1,0 +1,115 @@
+.services {
+  width: 100%;
+  position: relative;
+  background: $section3;
+  padding-top: 5rem;
+  @include max-screen(480px)  {
+    background: url("../img/general/services_mb.jpg");
+    font-size: cover;
+  }
+  &_wrap {
+    width: 98rem;
+    max-width: 93%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 9rem;
+    @include max-screen(3750px) {
+      padding: 0;
+    }
+  }
+  &_title {
+    color: $baseColor;
+    font-family: "Playfair Display";
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &_describe {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    @include max-screen(480px) {
+      justify-content: center;
+    }
+  }
+  &_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 26.5rem;
+    height: 12rem;
+    margin-bottom: 7rem;
+    @include max-screen(1440px) {
+      //width: 23rem;
+      margin-bottom: 5rem;
+    }
+  }
+  &_text {
+    color: $baseColor;
+    font-size: 10rem;
+    font-weight: 300;
+    line-height: 2.1rem;
+    padding-bottom: 3rem;
+  }
+  &_cost {
+    color: $baseColor;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &_offer {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    @include max-screen(480px) {
+      padding: 0 1rem;
+    }
+  }
+  &_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15rem;
+    background-color: $buttonColor;
+    width: 257px;
+    height: 86px;
+    color: $titleColor;
+    font-size: 2rem;
+    font-weight: 100;
+    @include max-screen(480px) {
+      margin-bottom: 5rem;
+    }
+  }
+  &_accent__mob {
+    display: none;
+    @include max-screen(480px)  {
+      width: 42rem;
+      height: 72rem;
+      position: absolute;
+      top: 0%;
+      left: 0;
+    }
+  }
+  &_scratch {
+    width: 100%;
+  }
+
+  &_item__last {
+    @include max-screen(1024px)  {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+a.services_button {
+  &:hover {
+    background-color: lighten($buttonColor,20%);
+
+  }
+
+
+}

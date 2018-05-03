@@ -1,0 +1,98 @@
+#google-map {
+  height: 100vh;
+  max-height: 100%;
+  width: 60rem;
+}
+.adress {
+  width: 100%;
+  background: $map;
+  &_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 144rem;
+    margin: 0 auto;
+    height: 50rem;
+  }
+  &_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 73.5rem;
+    //max-width: 50%;
+    height: 45rem;
+    padding-left: 2rem;
+
+  }
+  &_describe {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    include max-screen(425px) {
+    padding: 1rem;
+
+  }
+  }
+  &_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding-bottom: 3rem;
+    @include max-screen(1440px)  {
+      padding-bottom: 0;
+
+    }
+
+  }
+  &_text {
+    font-family: $title;
+    color:  $titleColor;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  &_cost {
+    width: 25rem;
+    color:  $titleColor;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: left;
+    width: 100%;
+
+  }
+  &_social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include max-screen(1440px)  {
+      padding-top: 3rem;
+
+    }
+    @include max-screen(1024px)  {
+      display: none;
+    }
+  }
+  &_icon {
+    padding-right: 3rem;
+  }
+  &_social__footer {
+    display: none;
+    @include max-screen(1024px)  {
+      display: flex;
+      justify-content: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    @include max-screen(768px)  {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+    }
+  }
+}

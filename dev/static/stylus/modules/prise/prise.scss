@@ -1,0 +1,86 @@
+.prise {
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  left: 0;
+  z-index: 100;
+  @include max-screen(1440px)  {
+    top: 130%;
+    left: 0;
+  }
+  @include max-screen(1024px)  {
+    //top: 180%;
+    //left: 0;
+  }
+  @include max-screen(768px)  {
+    top: 120%;
+    left: 0;
+  }
+  @include max-screen(768px)  {
+    top: 120%;
+    left: 0;
+  }
+  @include max-screen(480px)  {
+    position: static;
+  }
+  &_wrap {
+    width: 85rem;
+    max-width: 93%;
+    box-shadow: 2px 4px 46px 3px rgba(0, 1, 1, 0.11);
+    background-color: $titleColor;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 9rem;
+    box-sizing: border-box;
+
+  }
+  &_title {
+    color: $baseColor;
+    font-family: "Playfair Display";
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &_describe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    @include max-screen(488px)  {
+      justify-content: center;
+    }
+  }
+  &_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22rem;
+    height: 12rem;
+    margin-bottom: 7rem;
+  }
+  &_text {
+    color: $baseColor;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 2.1rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+  }
+  &_cost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 103px;
+    height: 36px;
+    border: 1px solid $baseColor;
+    color: $baseColor;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+}

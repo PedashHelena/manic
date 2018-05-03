@@ -1,0 +1,35 @@
+@import 'utils/fonts.scss';
+@import 'utils/vars.scss';
+@import 'utils/mixins.scss';
+//@import 'libs.scss';
+
+//Components
+@import 'components/components.scss';
+
+//Module
+@import 'modules/modules.scss';
+
+
+html {
+  font: 10px/2.1 $base;
+  color: $baseColor;
+  @include max-screen(2560px)  {
+    font-size: 15px;
+  }
+
+  @include max-screen(768px)  {
+    font-size: 9px;
+  }
+
+  @include max-screen(480px)  {
+    font-size: 8px;
+  }
+
+  @include max-screen(320px)  {
+    font-size: 7px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
