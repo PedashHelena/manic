@@ -3,13 +3,16 @@
   position: relative;
   background: $section3;
   padding-top: 5rem;
+  @include max-screen(780px)  {
+    padding-top: 0;
+  }
   @include max-screen(480px)  {
-    background: url("../img/general/services_mb.jpg");
-    font-size: cover;
+    background: url("../img/general/services_mb.jpg") no-repeat;
+    background-size: cover;
   }
   &_wrap {
-    width: 98rem;
-    max-width: 93%;
+    max-width: 98rem;
+    //max-width: 93%;
     margin: 0 auto;
     text-align: center;
     padding: 2rem 9rem;
@@ -30,8 +33,11 @@
     align-items: flex-start;
     align-content: center;
     flex-wrap: wrap;
+    width: 82rem;
+    margin: 0 auto;
     @include max-screen(480px) {
       justify-content: center;
+      width: 93%;
     }
   }
   &_item {
@@ -39,12 +45,17 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 26.5rem;
+    width: 28%;
     height: 12rem;
-    margin-bottom: 7rem;
+    margin-bottom: 1rem;
     @include max-screen(1440px) {
       //width: 23rem;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
+    }
+    @include max-screen(480px) {
+      width: 60%;
+      margin-bottom: 0;
+
     }
   }
   &_text {
@@ -56,9 +67,12 @@
   }
   &_cost {
     color: $baseColor;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 400;
     text-transform: uppercase;
+    @include max-screen(480px) {
+      font-size: 1.7rem;
+    }
   }
   &_offer {
     font-size: 2rem;
@@ -73,10 +87,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 15rem;
+    margin: 2rem auto 5rem;;
     background-color: $buttonColor;
-    width: 257px;
-    height: 86px;
+    width: 26rem;
+    height: 8rem;
     color: $titleColor;
     font-size: 2rem;
     font-weight: 100;
@@ -100,8 +114,8 @@
 
   &_item__last {
     @include max-screen(1024px)  {
-      display: block;
-      margin: 0 auto;
+      //display: block;
+      //margin: 0 auto;
     }
   }
 }

@@ -4,11 +4,15 @@
   background: $section2;
   //overflow-x: hidden;
   @include max-screen(480px)  {
-    background: url("../img/general/section2_bg.jpg") no-repeat;
+    background: url("../img/general/section2_1bg.png") no-repeat;
     height: 200rem;
+    margin-top: -18rem;
+    padding-bottom: 100rem;
   }
   @include max-screen(320px)  {
     height: 220rem;
+    margin-top: -20rem;
+    padding-bottom: 120rem;
   }
   &_wrap {
     display: flex;
@@ -23,12 +27,11 @@
   }
   &_accent {
     position: absolute;
-    top: -100%;
+    top: -30%;
     right: 0;
-    max-width: 30rem;
     max-height: 77rem;
     @include max-screen(1240px)  {
-      top: -180%;
+      top: -80%;
     }
     @include max-screen(768px)  {
       display: none;

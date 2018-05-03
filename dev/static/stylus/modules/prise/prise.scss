@@ -1,37 +1,41 @@
 .prise {
   width: 100%;
   position: absolute;
-  top: 75%;
+  bottom: 40rem;
   left: 0;
   z-index: 100;
-  @include max-screen(1440px)  {
-    top: 130%;
-    left: 0;
-  }
-  @include max-screen(1024px)  {
-    //top: 180%;
-    //left: 0;
-  }
-  @include max-screen(768px)  {
-    top: 120%;
-    left: 0;
-  }
-  @include max-screen(768px)  {
-    top: 120%;
-    left: 0;
-  }
+  //@include max-screen(1100px)  {
+  //  bottom: 20rem;
+  //}
+
   @include max-screen(480px)  {
     position: static;
+    padding-top: 20rem;
   }
   &_wrap {
-    width: 85rem;
-    max-width: 93%;
+    max-width: 85rem;
+    width: 93%;
     box-shadow: 2px 4px 46px 3px rgba(0, 1, 1, 0.11);
     background-color: $titleColor;
     margin: 0 auto;
     text-align: center;
     padding: 2rem 9rem;
     box-sizing: border-box;
+    @include max-screen(1240px)  {
+      padding: 2rem 1rem;
+    }
+    //@include max-screen(1024px)  {
+    //  //top: 180%;
+    //  //left: 0;
+    //}
+    //@include max-screen(768px)  {
+    //  top: 120%;
+    //  left: 0;
+    //}
+    //@include max-screen(768px)  {
+    //  top: 120%;
+    //  left: 0;
+    //}
 
   }
   &_title {
@@ -54,11 +58,14 @@
   &_item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 22rem;
+    width: 30%;
     height: 12rem;
     margin-bottom: 7rem;
+    @include max-screen(440px)  {
+      width: 60%;
+    }
   }
   &_text {
     color: $baseColor;

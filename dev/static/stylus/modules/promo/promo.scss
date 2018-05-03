@@ -1,9 +1,11 @@
 .promo {
   width: 100%;
-  min-height: 100vh;
+  //min-height: 100vh;
   background: url("../img/general/promo_bg.jpg") no-repeat;
   background-size: cover;
   color: $titleColor;
+  position: relative;
+  //min-height: 111rem;
   @include max-screen(1680px)  {
     background-position: 65% top;
   }
@@ -70,15 +72,16 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 3rem 0 42rem;
+    padding: 3rem 0 48rem;
     @include max-screen(1440px)  {
       padding-bottom: 50rem;
     }
     @include max-screen(1024px)  {
-      padding-bottom: 70rem;
+      //padding-bottom: 70rem;
     }
     @include max-screen(480px)  {
-      padding: 15rem 4rem 5rem;
+      padding: 15rem 4rem 14rem;
+
     }
 
   }
@@ -93,10 +96,11 @@
     font-size: 6rem;
     line-height: 1.2;
     font-weight: 700;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     @include max-screen(440px)  {
       text-transform: none;    }
   }
+
   &_firstletter {
     color: $letterColor;
   }

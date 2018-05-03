@@ -95,4 +95,12 @@
 
     }
   }
+  &_station__map {
+    display: none;
+    @include max-screen(440px)  {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+  }
 }

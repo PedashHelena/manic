@@ -1,6 +1,9 @@
 .slider {
   width: 100%;
   padding-bottom: 5rem;
+  @include max-screen(1440px) {
+    padding-bottom: 7rem;
+  }
   &_wrapper {
     display: flex;
     flex-direction: row;
@@ -56,8 +59,14 @@
   }
   &_button__slider {
     margin: 0;
-    margin-top: 8rem;
+    margin-top: 26rem;
     align-self: flex-end;
+    @include max-screen(1440px) {
+      margin-top: 21rem;
+    }
+    @include max-screen(1024px) {
+      display: none;
+    }
     @include max-screen(1024px) {
       display: none;
     }
@@ -68,15 +77,19 @@
       display: flex;
       margin: 0 auto;
       text-align: center;
-      margin-top: 5rem;
+      margin-top: 7rem;
+      width: 26rem;
+      height: 8rem;
     }
-    @include max-screen(1024px) {
+  }
+  &_button__header {
+    display: none;
+    @include max-screen(440px) {
       display: flex;
       margin: 0 auto;
       text-align: center;
       margin-top: 8rem;
     }
-
   }
   &_text_none {
     @include max-screen(768px) {

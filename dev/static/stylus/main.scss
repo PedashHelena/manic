@@ -16,6 +16,9 @@ html {
   @include max-screen(2560px)  {
     font-size: 15px;
   }
+  @include max-screen(1700px)  {
+    font-size: 10px;
+  }
 
   @include max-screen(768px)  {
     font-size: 9px;
@@ -28,6 +31,9 @@ html {
   @include max-screen(320px)  {
     font-size: 7px;
   }
+}
+body {
+  margin: 0;
 }
 
 a {
