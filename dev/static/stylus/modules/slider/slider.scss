@@ -40,7 +40,7 @@
     }
   }
   &_h2 {
-    font-family: PlayfairDisplay;
+    font-family: 'Bodoni';
     color: #010000;
     font-size: 40px;
     font-weight: 700;
@@ -53,9 +53,12 @@
   &_text {
     color: rgba(0, 0, 0, 0.51);
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 1.2;
     text-align: left;
+  }
+  &_text_mod {
+    font-weight: normal;
   }
   &_button__slider {
     margin: 0;

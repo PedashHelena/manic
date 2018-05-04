@@ -16,6 +16,12 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Bodoni';
+  src: url("../bodoni-bold-cyrillic_allfont.net-webfont.woff2") format("woff2"), url("../bodoni-bold-cyrillic_allfont.net-webfont.woff") format("woff"), url("../fonts/bodoni.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 .promo {
   width: 100%;
   background: url("../img/general/promo_bg.jpg") no-repeat;
@@ -126,6 +132,7 @@
   .promo_firstletter {
     color: #dda4e7; }
   .promo_text {
+    font-weight: 100;
     margin: 0;
     padding-bottom: 3rem; }
   .promo_button {
@@ -425,7 +432,7 @@ a.promo_button:hover {
         padding: 0; } }
   .services_title {
     color: black;
-    font-family: "Playfair Display";
+    font-family: 'Bodoni';
     font-size: 25px;
     font-weight: 700;
     text-transform: uppercase; }
@@ -484,7 +491,7 @@ a.promo_button:hover {
   .services_cost {
     color: black;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 100;
     text-transform: uppercase; }
     @media only screen and (max-width: 480px) {
       .services_cost {
@@ -492,6 +499,7 @@ a.promo_button:hover {
   .services_offer {
     font-size: 2rem;
     text-align: center;
+    font-weight: 100;
     margin: 0; }
     @media only screen and (max-width: 480px) {
       .services_offer {
@@ -592,7 +600,7 @@ a.services_button:hover {
     display: block;
     width: 100%; }
   .slider_h2 {
-    font-family: PlayfairDisplay;
+    font-family: 'Bodoni';
     color: #010000;
     font-size: 40px;
     font-weight: 700;
@@ -604,9 +612,11 @@ a.services_button:hover {
   .slider_text {
     color: rgba(0, 0, 0, 0.51);
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 1.2;
     text-align: left; }
+  .slider_text_mod {
+    font-weight: normal; }
   .slider_button__slider {
     margin: 0;
     margin-top: 26rem;

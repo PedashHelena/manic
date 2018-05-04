@@ -22,7 +22,7 @@
   }
   &_title {
     color: $baseColor;
-    font-family: "Playfair Display";
+    font-family: 'Bodoni';
     font-size: 25px;
     font-weight: 700;
     text-transform: uppercase;
@@ -68,7 +68,7 @@
   &_cost {
     color: $baseColor;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 100;
     text-transform: uppercase;
     @include max-screen(480px) {
       font-size: 1.7rem;
@@ -77,6 +77,7 @@
   &_offer {
     font-size: 2rem;
     text-align: center;
+    font-weight: 100;
     margin: 0;
     @include max-screen(480px) {
       padding: 0 1rem;
