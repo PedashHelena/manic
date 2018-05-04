@@ -26,6 +26,9 @@
     font-size: 25px;
     font-weight: 700;
     text-transform: uppercase;
+    @include max-screen(400px) {
+      font-size: 23px;
+    }
   }
   &_describe {
     display: flex;

@@ -46,7 +46,7 @@
     width: 42rem;
     @include max-screen(480px)  {
       justify-content: space-around;
-
+      width: 30rem;
     }
   }
   &_item {
