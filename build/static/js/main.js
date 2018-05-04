@@ -243,7 +243,7 @@ function addMarker(latLng, name, address) {
         title: name,
         icon: {
             url: "../static/img/general/pointer.png",
-            scaledSize: new google.maps.Size(30, 45)
+            scaledSize: new google.maps.Size(25, 30)
         },
     });
 

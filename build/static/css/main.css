@@ -699,7 +699,7 @@ a.services_button:hover {
         font-size: 40px !important; } }
   @media only screen and (max-width: 1680px) {
     .slick-next {
-      top: 103% !important; } }
+      top: 104% !important; } }
   @media only screen and (max-width: 1440px) {
     .slick-next {
       top: 102% !important; } }
@@ -719,7 +719,7 @@ a.services_button:hover {
       color: white; } }
 
 #google-map {
-  height: 100vh;
+  height: 60rem;
   max-height: 100%;
   width: 60rem; }
 
@@ -738,7 +738,7 @@ a.services_button:hover {
             align-items: flex-start;
     max-width: 144rem;
     margin: 0 auto;
-    height: 50rem; }
+    min-height: 60rem; }
   .adress_main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -751,7 +751,7 @@ a.services_button:hover {
         -ms-flex-pack: center;
             justify-content: center;
     width: 73.5rem;
-    height: 45rem;
+    height: 60rem;
     padding-left: 2rem; }
   .adress_describe {
     display: -webkit-box;
@@ -815,10 +815,11 @@ a.services_button:hover {
             justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding-top: 7rem; }
     @media only screen and (max-width: 1440px) {
       .adress_social {
-        padding-top: 3rem; } }
+        padding-top: 7rem; } }
     @media only screen and (max-width: 1024px) {
       .adress_social {
         display: none; } }
