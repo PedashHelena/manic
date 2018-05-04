@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/latobold-webfont.woff2") format("woff2"), url("../fonts/latobold-webfont.woff") format("woff"), url("../fonts/LATOBOLD.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/latolight-webfont.woff2") format("woff2"), url("../fonts/latolight-webfont.woff") format("woff"), url("../fonts/LATOLIGHT.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/latoregular-webfont.woff2") format("woff2"), url("../fonts/latoregular-webfont.woff") format("woff"), url("../fonts/LATOREGULAR.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 .promo {
   width: 100%;
   background: url("../img/general/promo_bg.jpg") no-repeat;
@@ -714,8 +732,9 @@ a.services_button:hover {
         flex-wrap: wrap;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-    .adress_describe include max-screen(425px) {
-      padding: 1rem; }
+    @media only screen and (max-width: 425px) {
+      .adress_describe {
+        padding: 1rem; } }
   .adress_item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -730,10 +749,11 @@ a.services_button:hover {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 100%;
+    width: 40%;
     padding-bottom: 3rem; }
     @media only screen and (max-width: 1440px) {
       .adress_item {
+        width: 93%;
         padding-bottom: 0; } }
   .adress_text {
     font-family: "Playfair Display", serif;

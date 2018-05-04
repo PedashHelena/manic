@@ -31,9 +31,8 @@
     align-content: center;
     flex-wrap: wrap;
     box-sizing: border-box;
-    include max-screen(425px) {
+    @include max-screen(425px) {
     padding: 1rem;
-
   }
   }
   &_item {
@@ -41,9 +40,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    width: 40%;
     padding-bottom: 3rem;
     @include max-screen(1440px)  {
+      width: 93%;
       padding-bottom: 0;
 
     }
