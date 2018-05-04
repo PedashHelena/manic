@@ -10,9 +10,6 @@ $(document).ready(function(){
     });
 });
 
-
-
-
 //MAP
 var markersData = [
     {
@@ -30,7 +27,6 @@ var markersData = [
 ];
 
 var map, infoWindow;
-
 function initMap() {
     var centerLatLng = new google.maps.LatLng(56.2928515, 43.7866641);
     var mapOptions = {
@@ -246,7 +242,6 @@ function addMarker(latLng, name, address) {
             scaledSize: new google.maps.Size(25, 30)
         },
     });
-
     google.maps.event.addListener(marker, "click", function() {
 
         var contentString = '<div class="infowindow">' +
@@ -260,3 +255,18 @@ function addMarker(latLng, name, address) {
     });
 }
 
+
+//CALL
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if(height > 50){
+        $('.js-callback')
+            .removeClass('.callback_none')
+            .addClass('callback');
+    } else{
+        $('.js-callback')
+            .removeClass('callback')
+            .addClass('callback_none');
+    }
+
+});
